@@ -7,7 +7,7 @@ import net.minestom.server.command.CommandSender;
 import net.minestom.server.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class PlayerTypeAdapter implements ParameterAdapter<Player> {
+public class PlayerParameterAdapter implements ParameterAdapter<Player> {
 
     @Override
     public Player process(@NotNull String str) {

@@ -1,12 +1,11 @@
 package net.minesprawl.commandstom.parameters;
 
-
-import net.mineworks.prisons.prisonscore.utils.command.adapters.*;
-import org.bukkit.ChatColor;
-import org.bukkit.command.CommandSender;
+import net.kyori.adventure.text.format.TextColor;
+import net.minesprawl.commandstom.ParameterAdapter;
+import net.minestom.server.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
-public class LongTypeAdapter implements ParameterAdapter<Long> {
+public class LongParameterAdapter implements ParameterAdapter<Long> {
 
     @Override
     public Long process(@NotNull String str) {
@@ -15,6 +14,7 @@ public class LongTypeAdapter implements ParameterAdapter<Long> {
 
     @Override
     public void processException(@NotNull CommandSender sender, @NotNull String given, @NotNull Exception exception) {
-        sender.sendMessage(ChatColor.RED + "'" + given + "' is not a valid number.");
+        sender.sendMessage(TextColor.fromHexString("#FF0000") + "'" + given + "' is not a valid number.");
     }
+
 }

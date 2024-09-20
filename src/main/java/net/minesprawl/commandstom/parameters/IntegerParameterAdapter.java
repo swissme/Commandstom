@@ -5,7 +5,7 @@ import net.minesprawl.commandstom.ParameterAdapter;
 import net.minestom.server.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
-public class IntegerTypeAdapter implements ParameterAdapter<Integer> {
+public class IntegerParameterAdapter implements ParameterAdapter<Integer> {
 
     @Override
     public Integer process(@NotNull String str) {

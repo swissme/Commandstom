@@ -5,7 +5,7 @@ import net.minesprawl.commandstom.ParameterAdapter;
 import net.minestom.server.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
-public class BooleanTypeAdapter implements ParameterAdapter<Boolean> {
+public class BooleanParameterAdapter implements ParameterAdapter<Boolean> {
 
     @Override
     public Boolean process(@NotNull String str) {

@@ -5,7 +5,7 @@ import net.minesprawl.commandstom.ParameterAdapter;
 import net.minestom.server.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
-public class DoubleTypeAdapter implements ParameterAdapter<Double> {
+public class DoubleParameterAdapter implements ParameterAdapter<Double> {
 
     @Override
     public Double process(@NotNull String str) {
