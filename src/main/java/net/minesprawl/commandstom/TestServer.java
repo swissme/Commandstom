@@ -1,6 +1,6 @@
 package net.minesprawl.commandstom;
 
-import net.minesprawl.commandstom.impl.TestCommand;
+import net.minesprawl.commandstom.impl.TeleportCommand;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.coordinate.Pos;
 import net.minestom.server.entity.Player;
@@ -29,7 +29,7 @@ public class TestServer {
         CommandstomHandler commandstomHandler = new CommandstomHandler();
 
         commandstomHandler.registerCommands(
-               new TestCommand()
+               new TeleportCommand()
         );
 
         minecraftServer.start("0.0.0.0", 25565);
